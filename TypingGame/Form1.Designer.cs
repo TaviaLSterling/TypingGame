@@ -38,6 +38,7 @@
             this.accuracyLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.difficultyProgressBar = new System.Windows.Forms.ProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,21 +106,32 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(545, 20);
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "Difficulty";
-            this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // difficultyProgressBar
             // 
             this.difficultyProgressBar.Location = new System.Drawing.Point(650, 98);
             this.difficultyProgressBar.Maximum = 701;
             this.difficultyProgressBar.Name = "difficultyProgressBar";
-            this.difficultyProgressBar.Size = new System.Drawing.Size(100, 23);
+            this.difficultyProgressBar.Size = new System.Drawing.Size(170, 23);
             this.difficultyProgressBar.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Chartreuse;
+            this.button1.Location = new System.Drawing.Point(349, 98);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 123);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.difficultyProgressBar);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.listBox1);
@@ -148,6 +160,7 @@
         private System.Windows.Forms.ToolStripStatusLabel accuracyLabel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ProgressBar difficultyProgressBar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

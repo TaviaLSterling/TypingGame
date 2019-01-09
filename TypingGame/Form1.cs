@@ -56,5 +56,11 @@ namespace TypingGame
             totalLabel.Text = "Total: " + stats.Total;
             accuracyLabel.Text = "Accuracy: " + stats.Accuracy + "%";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            stats.Update(true);
+        }
     }
 }
